@@ -10,7 +10,7 @@ size_t fib_rapid(int nr)
     else if(fibs[nr] != 0) /// daca valoarea exista returneaz-o
         return fibs[nr];
     else{
-        fibs[nr] = fib_rapid(nr - 1) + fib_rapid(nr - 2); /// daca nu: pula
+        fibs[nr] = fib_rapid(nr - 1) + fib_rapid(nr - 2); /// daca nu exista: pula
         return fibs[nr];
     }
 }
