@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * TUTORIAL DINAMICA cu fibonaci
+ */
+
 /// size_t este un int foarte mare
 size_t fibs[100];
 size_t fib_rapid(int nr)
