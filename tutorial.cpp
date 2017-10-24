@@ -2,7 +2,7 @@
 using namespace std;
 
 /**
- * TUTORIAL DINAMICA cu fibonaci
+ * TUTORIAL DINAMICA cu fibonacci
  */
 
 /// size_t este un int foarte mare
