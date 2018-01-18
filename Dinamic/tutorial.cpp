@@ -6,6 +6,7 @@ using namespace std;
  */
 
 /// size_t este un int foarte mare
+/// functia salveaza in vector valorile ca sa nu fie recalculate
 size_t fibs[100];
 size_t fib_rapid(int nr)
 {
@@ -14,7 +15,8 @@ size_t fib_rapid(int nr)
     else if(fibs[nr] != 0) /// daca valoarea exista returneaz-o
         return fibs[nr];
     else{
-        fibs[nr] = fib_rapid(nr - 1) + fib_rapid(nr - 2); /// daca nu exista: pula
+        /// daca nu exista atunci calculam
+        fibs[nr] = fib_rapid(nr - 1) + fib_rapid(nr - 2); 
         return fibs[nr];
     }
 }
@@ -26,11 +28,6 @@ size_t fib_prost(int nr)
     else
         return fib_prost(nr - 1) + fib_prost(nr - 2);
 }
-
-/**
- * ideea este ca fib_rapid SALVEAZA in vector rezultatele
- * ca sa nu fie recalculate
-*/
 
 int main()
 {
