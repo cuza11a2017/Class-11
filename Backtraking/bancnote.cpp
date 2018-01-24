@@ -31,11 +31,12 @@ int bkt(int k,int suma)
     for(int i=1;i<=b[k];i++)
     {
         x[k]=i;
-        if(suma+x[k]*a[k]<=s)
-            if(k<=n and suma+x[k]*a[k]==s)
+        suma = suma + x[k] * a[k];
+        if(suma<=s)
+            if(k<=n and suma==s)
                 afisare(k);
             else
-                bkt(k+1,suma+x[k]*a[k]);
+                bkt(k+1,suma);
     }
 }
 int main()
