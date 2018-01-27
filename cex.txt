@@ -1,0 +1,4 @@
+problema triunghiului
+ex 1: n,m plec de pe col 1 de oriunde si sa ajung pe col n si pot merge doar in dr-sus,dr-jos sau dreapta si sa fie max suma
+ex 2: ai un sir dat, subsir cresc de l max 
+ex 3: inmultire optima a n matrice; oribil
