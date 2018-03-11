@@ -40,7 +40,7 @@ int main() {
 }
 ```
 Note:
-* functia *abort* este definita in **&lt;cstdlib&gt;** si face ce spune ca face
+* functia *abort* este definita in **&lt;cstdlib&gt;** ,si DA, face ce spune ca face
 * *assert* este definit in **&lt;cassert&gt;**, iar daca conditia este falsa atunci *abort* este apelat
 
 ---
