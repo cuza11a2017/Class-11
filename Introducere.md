@@ -146,7 +146,7 @@ void f(stack& s){
 
 ```
 Ca sa impiedicam ~~dobitocul~~ persoana neatenta din a strica programul, facem variabilele private, si functiile publice.  
-Doar o funcite din corpul structurii poate modifica sau accesa o variabila privata
+Doar o functie din corpul structurii poate modifica sau accesa o variabila privata
 ```cpp
 class stack {
 private:
