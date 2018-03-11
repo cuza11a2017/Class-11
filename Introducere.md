@@ -82,7 +82,7 @@ int main() {
 ```
 
 ---
-Pentru transformare completa a codului in paradigma de obiecte, o sa schimbam numele parametrului din **s** in **this**
+Inainte sa purcedem, o sa schimbam numele parametrului din **s** in **this**
 ```cpp
 int pop(stack* this) {
     assert(this->size > 0);
@@ -91,7 +91,7 @@ int pop(stack* this) {
     return this->data[last];
 }
 ```
-Acum, o sa folosim sintaxa speciala pentru clase si obiecte pe care C++, Java, C# si alte limbaje o detin.  
+Pentru transformare completa a codului in paradigma de obiecte:
 * Mutam functiile pe care vrem sa le asociem cu tipul de data, in corpul structurii
 * Stergem parametrul cu pointer catre structura, de restul argumentelor (daca mai sunt) nu ne atingem
 * Pointerul *this* se refera la obiectul care este modificat de o functie
@@ -103,6 +103,7 @@ struct stack {
     int size;
     int data[100];
     
+    // constructorul
     stack() {
         this->size = 0;
     }
