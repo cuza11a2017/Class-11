@@ -2,7 +2,7 @@
 
 > Un obiect este o structura de date asociata cu mai multe functii ce o modifica. *struct* cu functii plm, struct cu functii...
 
-Aici aproape avem un obiect, o structua + functii ce o modifica parametrul prin referinta.  
+Aici aproape avem un obiect, o structua + functii ce modifica parametrul prin referinta.  
 Acesta poate fi considerat un obiect in C, in C++ exista sintaxa speciala.  
 Codul ar trebui sa se explice singur...
 ``` cpp
