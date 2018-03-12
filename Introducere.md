@@ -24,9 +24,8 @@ void push(stack& s, int x){
 
 int pop(stack& s) {
     assert(s.size > 0);
-    int last = s.size;
     s.size--;
-    return s.data[last];
+    return s.data[s.size];
 }
 
 int main() {
@@ -65,9 +64,8 @@ void push(stack* s, int x){
 
 int pop(stack* s) {
     assert(s->size > 0);
-    int last = s->size;
     s->size--;
-    return s->data[last];
+    return s->data[s->size];
 }
 
 int main() {
@@ -86,9 +84,8 @@ Inainte sa purcedem, o sa schimbam numele parametrului din **s** in **this**
 ```cpp
 int pop(stack* this) {
     assert(this->size > 0);
-    int last = this->size;
-    this->size--;
-    return this->data[last];
+    this->size--;
+    return this->data[this->size];
 }
 ```
 Pentru transformare completa a codului in paradigma de obiecte:
@@ -117,9 +114,8 @@ struct stack {
 
     int pop() {
         assert(this->size > 0);
-        int last = this->size;
-        this->size--;
-        return this->data[last];
+        this->size--;
+        return this->data[this->size];
     }
 };
 
