@@ -1,6 +1,6 @@
 # Definitie ~~proasta~~
 
-> Un obiect este o structura de date asociata cu mai multe functii ce o modifica. *struct* cu functii plm, struct cu functii...
+> Un obiect este o structura de date asociata cu mai multe functii ce o modifica. `struct` cu functii plm, struct cu functii...
 
 Aici aproape avem un obiect, o structua + functii ce modifica parametrul prin referinta.  
 Acesta poate fi considerat un obiect in C, in C++ exista sintaxa speciala.  
@@ -38,13 +38,11 @@ int main() {
     cout << s.size << endl;
 }
 ```
-
 Note:
-* functia *abort* este definita in **&lt;cstdlib&gt;** ,si DA, face ce crezi ca face
-* *assert* este definit in **&lt;cassert&gt;**, iar daca conditia este falsa atunci *abort* este apelat
+* functia `abort` este definita in `<cstdlib>` ,si DA, face ce crezi ca face
+* `assert` este definit in `<cassert>`, iar daca conditia este falsa atunci `abort` este apelat
 
 ---
-
 Pentru ca suntem masochisti, o sa schimbam referintele cu **pointeri**.  
 Logica codului este acceasi, dar acum apar mai multe sageti si dam adresa variabilei ca parametru.
 ``` cpp
@@ -82,9 +80,7 @@ int main() {
 ```
 
 ---
-
-Inainte sa purcedem, o sa schimbam numele parametrului din **s** in **this**
-
+Inainte sa purcedem, o sa schimbam numele parametrului din `s` in `this`
 ```cpp
 int pop(stack* this) {
     assert(this->size > 0);
@@ -92,15 +88,13 @@ int pop(stack* this) {
     return this->data[this->size];
 }
 ```
-
 Pentru transformare completa a codului in paradigma de obiecte:
 * Mutam functiile pe care vrem sa le asociem cu tipul de data, in corpul structurii
 * Stergem parametrul cu pointer catre structura, de restul argumentelor (daca mai sunt) nu ne atingem
-* Pointerul *this* se refera la obiectul care este modificat de o functie
-* Putem omite (din lene) pointerul *this* atunci cand ne referim la variabile din structura
-* Apelam functia obiectului cu sintaxa ```s.push(3)``` in loc de ```push(s,3)```
+* Pointerul `this` se refera la obiectul care este modificat de o functie
+* Putem omite (din lene) pointerul `this` atunci cand ne referim la variabile din structura
+* Apelam functia obiectului cu sintaxa `s.push(3)` in loc de `push(s,3)`
 * Functia *init* are denumirea de *constructor*, iar in C++ se declara cu acelasi nume ca structura; este apelat la declararea obiectului
-
 ```cpp
 struct stack {
     int size;
@@ -120,8 +114,8 @@ struct stack {
 
     int pop() {
         assert(this->size > 0);
-        this->size--;
-        return this->data[this->size];
+        this->size--;
+        return this->data[this->size];
     }
 };
 
@@ -145,6 +139,7 @@ void f(stack& s){
     s.data[1000] = 4;
     s.push(6);
 }
+
 ```
 Ca sa impiedicam ~~dobitocul~~ persoana neatenta din a strica programul, facem variabilele private, si functiile publice.  
 Doar o functie din corpul structurii poate modifica sau accesa o variabila privata
@@ -166,42 +161,8 @@ void f(stack& s){
 ```
 
 --- 
-
-Putem declara functiile inauntrul clasei/structurii sau in afara
-```cpp
-struct stack {
-private:
-    int data[100];
-    int size;
-public:
-    stack();
-    void push(int);
-    int pop();
-};
-
-void stack::stack()
-{
-    size = 0;
-}
-
-void stack::push(int x){
-    if(size >= 100)
-        abort();
-    data[size] = x;
-    size++;
-}
-
-int stack::pop() {
-    assert(this->size > 0);
-    this->size--;
-    return this->data[this->size];
-}
-```
-
----
-
-In C++, keyword-ul 'struct' si 'class' pot fi schimbate fara sa afecteze logica codului; au acelasi rol, fac acelasi lucru; exista doua denummiri pentru acelasi lucru din motive istorice.  
-Singura diferenta este: *struct* are vizibilitatea *public* ca default, *class* are *private*.
+In C++, keyword-ul `struct` si `class` pot fi schimbate fara sa afecteze logica codului; au acelasi rol, fac acelasi lucru; exista doua denummiri pentru acelasi lucru din motive istorice.  
+Singura diferenta este: `struct` are vizibilitatea `public` ca default, `class` are `private`.
 Asta inseamna ca urmatoarele doua definitii sunt echivalente:
 
 ```cpp
@@ -216,7 +177,6 @@ class vec {
 ```
 
 Si urmatoarele sunt echivatele:
-
 ```cpp
 struct vec{
     ...
@@ -227,5 +187,4 @@ public:
     ...
 };
 ```
-
 Cam atat.
