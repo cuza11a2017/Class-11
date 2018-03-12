@@ -94,7 +94,7 @@ Pentru transformare completa a codului in paradigma de obiecte:
 * Pointerul `this` se refera la obiectul care este modificat de o functie
 * Putem omite (din lene) pointerul `this` atunci cand ne referim la variabile din structura
 * Apelam functia obiectului cu sintaxa `s.push(3)` in loc de `push(s,3)`
-* Functia *init* are denumirea de *constructor*, iar in C++ se declara cu acelasi nume ca structura; este apelat la declararea obiectului
+* Functia `init` are denumirea de *constructor*, iar in C++ se declara cu acelasi nume ca structura; este apelat la declararea obiectului
 ```cpp
 struct stack {
     int size;
