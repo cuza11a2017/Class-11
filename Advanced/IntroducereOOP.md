@@ -227,7 +227,7 @@ public:
 };
 
 void f(stack& s){
-    // da eroare de compilare (asta si vrem)
+    // eroare de compilare (asta si vrem)
     s.size = 1000;
 }
 
