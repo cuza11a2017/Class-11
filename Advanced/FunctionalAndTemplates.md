@@ -202,7 +202,7 @@ void f(){
 ---
 
 * Tipul functiilor ca argument poate si el sa fie dedus: `F`
-* Declarare: vector<int> v(4);
+* Declarare: `vector<int> v(4);`
 * Tipul lui `v`: vector<int>
 * Folosinta: normal
 * Poti sa faci o matrice cu `vector<vector<int>> matrix` 
