@@ -2,9 +2,9 @@
 
 > Un obiect este o structura de date asociata cu mai multe functii ce o modifica. `struct` cu functii plm, struct cu functii...
 
-In C++, keyword-ul `struct` si `class` pot fi schimbate fara sa afecteze codulul; au acelasi rol, fac acelasi lucru, exista doua denummiri pentru acelasi lucru din motive istorice.</br>
-Singura diferenta este: `struct` are vizibilitatea `public` ca default, `class` are `private`.</br>
-Asta este singura diferenta, vorbesc serios.</br>
+In C++, keyword-ul `struct` si `class` pot fi schimbate fara sa afecteze codulul; au acelasi rol, fac acelasi lucru, exista doua denummiri pentru acelasi lucru din motive istorice.<br>
+Singura diferenta este: `struct` are vizibilitatea `public` ca default, `class` are `private`.<br>
+Asta este singura diferenta, vorbesc serios.<br>
 Asta inseamna ca urmatoarele doua definitii sunt echivalente:
 ```cpp
 struct vec {
@@ -28,10 +28,10 @@ public:
 };
 ```
 Doar pentru ca `struct` si `class` pot fi interschimbate nu inseamna ca este bine sa le amestecam.<br>
-O conventie folosita des spune ca folosim `struct` pentru tipuri de date simple si `class` pentru tipuri complexe.
+O conventie folosita des spune sa folosim `struct` pentru tipuri de date simple si `class` pentru tipuri complexe.
 
 ---
-Aici aproape avem un obiect, o structua + functii ce modifica argumentul prin referinta.
+Aici aproape avem un obiect, o structua + functii ce modifica argumentul prin referinta.<br>
 `assert()` este definit in `<cassert>`, daca conditia este falsa atunci `exit()` este apelat.
 
 ``` cpp
@@ -78,7 +78,7 @@ int main() {
 
 ---
 
-Pentru ca suntem masochisti, o sa schimbam referintele cu **pointeri**.
+Pentru ca suntem masochisti, o sa schimbam referintele cu **pointeri**.<br>
 Logica codului este acceasi, dar in loc de `.` folosim `->` si dam adresa variabilei ca argument.
 
 ``` cpp
@@ -120,7 +120,7 @@ int main() {
 
 ---
 
-Inainte sa purcedem, o sa schimbam numele argumentului din `s` in `this`.
+Inainte sa purcedem, o sa schimbam numele argumentului din `s` in `this`.<br>
 `this` este numele pe care compilatorul il alege pentru pointerul catre obiect.
 
 ```cpp
@@ -131,13 +131,14 @@ int pop(stack* this) {
 }
 ```
 
-Pentru transformare completa a codului:
+Pentru transformare completa a codului intr-un obiect:
 * Mutam functiile pe care vrem sa le asociem cu tipul de data, in corpul structurii, functiile se vor numi functii membru.
 * Stergem argumentul cu pointer catre structura, nu ne atingem de restul argumentelor (daca mai sunt).
 * Pointerul `this` se refera la obiectul curent.
 * Putem omite (din lene) pointerul `this` atunci cand ne referim la variabile din structura.
 * Apelam functia membru cu sintaxa `s.push(3)` in loc de `push(s,3)`.
 * Functia `init` are denumirea de *constructor*, iar in C++ se declara cu acelasi nume ca structura; este apelat la declararea obiectului.</br>
+
 Exemlu simplu:
 ```cpp
 struct pair {
@@ -238,7 +239,7 @@ void print(stack& s){
 
 ```
 ---
-Daca declaram doar numele functiei in `class` sau `struct`, si definitia in afara clasei atunci punem <nume-clasa>::<nume-functie>, fie ea functie, operator sau contructor.
+Daca declaram doar numele functiei in `class` sau `struct` si definitia in afara clasei, atunci punem `<nume-clasa>::<nume-functie>`, fie ea functie, operator sau contructor.
 ```cpp
 class pair{
     int x, y;
@@ -254,13 +255,13 @@ point::point(int a, int b) {
 }
 
 pair pair::operator(point p) {
-    point tmp;
-    tmp.x = this->x + p.y;
-    tmp.y = this->y + p.y;
+    pair tmp;
+    tmp.x = x + p.y;
+    tmp.y = y + p.y;
     return tmp;
 }
 void pair::print(){
-    cout << x << ' ' << y;
+    cout << this->x << ' ' << this->y;
 }
 ```
 Cam atat.
