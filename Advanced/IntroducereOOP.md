@@ -2,7 +2,7 @@
 
 > Un obiect este o structura de date asociata cu mai multe functii ce o modifica. `struct` cu functii plm, struct cu functii...
 
-In C++, keyword-ul `struct` si `class` pot fi schimbate fara sa afecteze codulul; au acelasi rol, fac acelasi lucru, exista doua denummiri pentru acelasi lucru din motive istorice.<br>
+In C++, keyword-ul `struct` si `class` pot fi schimbate fara sa afecteze codulul, au acelasi rol, fac acelasi lucru, exista doua denummiri pentru acelasi lucru din motive istorice.<br>
 Singura diferenta este: `struct` are vizibilitatea `public` ca default, `class` are `private`.<br>
 Asta este singura diferenta, vorbesc serios.<br>
 Asta inseamna ca urmatoarele doua definitii sunt echivalente:
