@@ -74,7 +74,7 @@ void filterPrim_v2()
 }
 ```
 Din pacate, tocmai ai violat princiul DRY si ai esuat in viata, naspa, esti o dezamagire pentru rasa umana, bitch.  
-Dar nu fi depresiv tinere ~~idiot~~ programator, poti sa-ti speli pacatele cu apa sfintita de Arsenie Boca si prin parametrizarea(dai ca argument) variabilei diferite, crearea unei functii noi si eradicare pe rug a functiilor pacatoase.
+Dar nu fi depresiv tinere ~~idiot~~ programator, poti sa-ti speli pacatele cu apa sfintita si prin parametrizarea(dai ca argument) variabilei diferite, crearea unei functii noi si eradicare pe rug a functiilor pacatoase.
 ```cpp
 void filterPrim(vector_int& vec)
 {
