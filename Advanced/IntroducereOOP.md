@@ -1,7 +1,7 @@
 # Definitie ~~proasta~~
 
 > Un obiect este o structura de date asociata cu mai multe functii ce o modifica. `struct` cu functii plm, struct cu functii...
-[comment]: <> (pentru a pastra uzanta)
+
 In C++, keyword-ul `struct` si `class` pot fi schimbate fara sa afecteze codulul, au acelasi rol, fac acelasi lucru, exista doua denumiri pentru acelasi lucru din motiv istoric.<br>
 Singura diferenta este: `struct` are vizibilitatea `public` ca default, `class` are `private`.<br>
 Asta este singura diferenta, vorbesc serios.<br>
@@ -265,3 +265,5 @@ void pair::print(){
 }
 ```
 Cam atat.
+
+[//]: # (pentru a pastra uzanta)
