@@ -74,7 +74,7 @@ struct point2 {
     point2(const point2& p) {
         // dirty trick
         // pointerul 'this' arata catre obiectul curent 
-        // asa ca folosim operatorul= definit anterior pt copy ctor
+        // asa ca folosim operatorul= definit anterior pentru copiere
         *this = p;
     }
 };
