@@ -83,7 +83,7 @@ void f() {
     point p(5, 4);
     point a(p);  // copy ctor
     point b = p; // operator =
-    // de obicei cele doua functii au implemetari identice
+    // de obicei copy ctor si '=' implemetari identice
 }
 ``` 
 ---
