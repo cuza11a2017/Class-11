@@ -1,6 +1,6 @@
 # Programare Functionala si Generica
 
-> Duplicate code is the root of all evil in software design. When a system is littered with many snippets of indentical, or nearly identical code, it is indicative of sloppiness, carelessness, and sheer unprofessionalism. It is the guilt-edged responsibility of all software developers to root out and eliminate duplication whenever they find it.   
+> Duplicate code is the root of all evil in software design. When a system is littered with many snippets of indentical, or nearly identical code, it is indicative of sloppiness, carelessness, and sheer unprofessionalism. It is the guilt-edged responsibility of all software developers to root out and eliminate duplication whenever they find it.<br>
 > -- *Uncle Bob*
 
 ### Ideea este simpla: **NU DA COPY PASTE**
