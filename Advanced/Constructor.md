@@ -1,4 +1,4 @@
-> Nu a vrut sa-si dea geanta jos, m-a sfidat! Stie el despre cine vorbesc.
+> Nu a vrut sa-si dea geanta jos, m-a sfidat! Stie el despre cine vorbesc.<br>
 > -- *Un om intelept*
 
 # Constructori (ctor)
