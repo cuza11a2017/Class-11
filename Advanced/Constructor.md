@@ -1,3 +1,6 @@
+> Nu a vrut sa-si dea geanta jos, m-a sfidat! Stie el despre cine vorbesc.
+> -- *Un om intelept*
+
 # Constructori (ctor)
 
 ### Default Constructor
