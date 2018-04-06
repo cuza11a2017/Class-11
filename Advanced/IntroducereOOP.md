@@ -257,7 +257,7 @@ point::point(int a, int b) {
     y = b;
 }
 
-pair pair::operator(point p) {
+pair pair::operator+(point p) {
     pair tmp;
     tmp.x = x + p.y;
     tmp.y = y + p.y;
