@@ -104,7 +104,7 @@ void filterPar(vector_int& vec)
 }
 ```
 Singura diferenta dintre `filterPar` si `filterPrim` este conditia din `if` care este o functie... Cum ar trebui sa o dam ca argument?  
-Pai... tipul variabilei vec este `vector_int`, iar tipul unei functii este `int f(int)`.  
+Pai... tipul variabilei `vec` este `vector_int`, iar tipul unei functii este `int f(int)`.  
 Asta inseamna ca vom lua ca argument o functie `bool f(int)`; `bool` deoarece verificam o conditie, functia se va numi *predicat*; denumirea este o conventie si se foloseste pentru functiile care verifica o conditie.
 ```cpp
 void filter_int(vector_int& vec, bool predicat(int))
