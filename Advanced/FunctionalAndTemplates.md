@@ -144,8 +144,8 @@ struct vector_string {
     vector_string(int x): size(x) {  }
 } cuvinte(300), versuri(50), strofe(13);
 ```
-Pisica ta, Ceciliu, a pasit pe tastatura si ti-a ruinat poezia despre fantezii gay cu politisti.  
-Faci o functie care filtreaza poezia de cuvinte generate de talpita pisicii
+Pisica ta, Ceciliu, a pasit pe tastatura si ti-a ruinat poezia!
+Faci o functie care filtreaza poezia de cuvinte generate de talpita pisicii.
 ```cpp
 bool CuvantCareNuEsteGenetatDeTalpitaPisicii(string);
 bool CuvantVulgar(string);
