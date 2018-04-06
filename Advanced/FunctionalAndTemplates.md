@@ -173,7 +173,7 @@ void f(){
 
 Ce este sunetul acela?  
 Vine dinspre geam...  
-Este un programator furios care incearca sa sparga greamul si sa intre in casa ca sa-ti fure colectia de gay porn!  
+Este un programator furios care incearca sa sparga greamul si sa intre in casa ca sa-ti fure colectia de porn!  
 Repede!  
 Impresioneaza-l ;) prin aplicarea principiului DRY!  
 Dar cum?  
